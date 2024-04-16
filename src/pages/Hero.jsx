@@ -88,14 +88,12 @@ const HeroButtonStyle = styled.button`
     font-weight: 600;
     font-size: 1.4rem;
     text-decoration: none;
-    animation: none;
-
+    transition: 0.2s ease-in !important;
     &:hover {
         background: #007bff;
         color: #fff;
         box-shadow: 0 0 0.5rem #007bff;
         transition: 0.2s ease-in !important;
-        letter-spacing: 0.2rem;
     }
 `;
 
@@ -114,7 +112,7 @@ const Hero = props => {
                             de se encontrar ao
                             mesmo tempo”
                         </HeroTextStyled>
-                        <HeroButtonStyle className="hero-btn btn btn-light font-weight-bold shadow px-5 rounded-pill">
+                        <HeroButtonStyle className="hero-btn btn btn-light font-weight-bold shadow px-5 rounded-pill shadow">
                             Search
                         </HeroButtonStyle>
                     </HeroBanner>
