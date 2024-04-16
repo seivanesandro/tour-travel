@@ -7,21 +7,30 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 import novoblue from '../../imgs/logoblue.png';
 import novoblue2 from '../../imgs/logoblue2.png';
+
+import { IoAirplane } from 'react-icons/io5';
+import { FaDollarSign } from 'react-icons/fa';
+
 const NavbarCanvas = () => {
     return (
         <>
             {' '}
-            {['sm'].map(expand => (
+            {['md'].map(expand => (
                 <Navbar
                     key={expand}
                     expand={expand}
-                    className="bg-primary mb-3 color-light"
+                    className="bg-primary mb-auto color-light shadow"
+                    fixed="top"
                 >
                     <Container fluid>
-                        <Navbar.Brand>
+                        <Navbar.Brand to="/home">
                             <img
                                 src={novoblue}
                                 alt="brand-logo"
+                                title="go to home page"
+                                style={{
+                                    cursor: 'pointer'
+                                }}
                             />
                         </Navbar.Brand>
                         <Navbar.Toggle
@@ -44,15 +53,26 @@ const NavbarCanvas = () => {
                                             novoblue2
                                         }
                                         alt="brand-logo"
+                                        title="go home"
                                     />
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Link href="#action1">
+                                    <Nav.Link
+                                        to="#action1"
+                                        className="d-flex flex-column align-items-sm-center px-3"
+                                        title="Travel"
+                                    >
+                                        <IoAirplane size="20" />
                                         Travel
                                     </Nav.Link>
-                                    <Nav.Link href="#action2">
+                                    <Nav.Link
+                                        to="#action2"
+                                        className="d-flex flex-column align-items-sm-center px-3"
+                                        title="Prices"
+                                    >
+                                        <FaDollarSign size="20" />
                                         Prices
                                     </Nav.Link>
                                 </Nav>
