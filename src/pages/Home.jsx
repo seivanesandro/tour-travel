@@ -1,5 +1,6 @@
 import React from 'react';
-import Hero from './Hero';
+import Hero from '../components/hero/Hero';
+import Main from '../components/main/Main';
 import styled from 'styled-components';
 //import PropTypes from 'prop-types'
 
@@ -10,6 +11,7 @@ const Home = props => {
         <>
             <ContainerHome className="container-home">
                 <Hero />
+                <Main />
             </ContainerHome>
         </>
     );

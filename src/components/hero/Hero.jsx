@@ -2,8 +2,8 @@ import React from 'react';
 import styled, {
     keyframes
 } from 'styled-components';
-import bgimage from '../imgs/bgvacationwithfilter.jpg';
-import { devices } from '../utils/constantes';
+import bgimage from '../../imgs/bgvacationwithfilter.jpg';
+import { devices } from '../../utils/constantes';
 //import PropTypes from 'prop-types'
 
 const Show = keyframes`
