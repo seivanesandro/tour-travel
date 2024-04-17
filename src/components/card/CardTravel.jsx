@@ -14,7 +14,7 @@ const CardTravel = ({name, day, url, price}) => {
                   src={url}
                   alt={name}
                   title={name}
-                  style={{width:'50rem', height:'40rem'}}
+                  style={{width:'27rem', height:'23rem'}}
               />
               <button className="btn-">
                   Days: {day} price:{' '}$
