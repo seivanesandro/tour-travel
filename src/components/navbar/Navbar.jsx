@@ -35,7 +35,11 @@ const NavbarCanvas = () => {
                         </Navbar.Brand>
                         <Navbar.Toggle
                             aria-controls={`offcanvasNavbar-expand-${expand}`}
-                            style={{outline:'none', border:'none',boxShadow:'none'}}
+                            style={{
+                                outline: 'none',
+                                border: 'none',
+                                boxShadow: 'none'
+                            }}
                         />
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-${expand}`}

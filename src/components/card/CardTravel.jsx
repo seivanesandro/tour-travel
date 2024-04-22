@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-
 const ColLgFour = styled.div`
     position: relative;
     display: flex;
@@ -14,7 +13,6 @@ const ColLgFour = styled.div`
     margin: 2rem auto;
     width: 23rem;
     z-index: 0 !important;
-
 `;
 
 const ContainerCardBody = styled.div`
@@ -25,8 +23,6 @@ const ContainerCardBody = styled.div`
     gap: 0.2rem;
     cursor: pointer;
     z-index: 100 !important;
-
-    
 `;
 
 const ContainerImg = styled.img`
@@ -58,7 +54,6 @@ const ContainerCardTitle = styled.div`
     opacity: 1;
     z-index: 101 !important;
 `;
-
 
 const ContainerPrice = styled.button`
     background: transparent;
