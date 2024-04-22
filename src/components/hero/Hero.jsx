@@ -20,7 +20,7 @@ const Show = keyframes`
 `;
 const ContainerHero = styled.div`
     /*TODO: Trick to put image background */
-    height: 87vh;
+    height: 99vh;
     display: flex;
     justify-content: center;
     align-items: center;
