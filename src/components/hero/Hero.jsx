@@ -20,6 +20,7 @@ const Show = keyframes`
 `;
 const ContainerHero = styled.div`
     /*TODO: Trick to put image background */
+    max-width: 100%;
     height: 99vh;
     display: flex;
     justify-content: center;
@@ -29,6 +30,8 @@ const ContainerHero = styled.div`
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: cover !important;
+    width: 105%;
+    
 `;
 const HeroBanner = styled('div')`
     text-align: center;

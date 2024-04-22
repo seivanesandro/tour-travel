@@ -15,7 +15,7 @@ const NavbarCanvas = () => {
     return (
         <>
             {' '}
-            {['sm'].map(expand => (
+            {['md'].map(expand => (
                 <Navbar
                     key={expand}
                     expand={expand}

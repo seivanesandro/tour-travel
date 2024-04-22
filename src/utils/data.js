@@ -44,7 +44,7 @@ const data = [
     {
         id: 7,
         name: 'New York',
-        url: 'https://cdn.pixabay.com/photo/2015/01/05/03/26/brooklyn-bridge-588951_960_720.jpg',
+        url: 'https://cdn.pixabay.com/photo/2016/11/22/19/17/buildings-1850129_960_720.jpg',
         price: '600',
         day: 6
     },
@@ -151,13 +151,6 @@ const data = [
         name: 'Rome',
         url: 'https://cdn.pixabay.com/photo/2017/01/01/17/39/rome-1945033_960_720.jpg',
         price: '$ 750',
-        day: 5
-    },
-    {
-        id: 23,
-        name: 'Newyork',
-        url: 'https://cdn.pixabay.com/photo/2016/11/22/19/17/buildings-1850129_960_720.jpg',
-        price: '$ 1000',
         day: 5
     }
 ];
