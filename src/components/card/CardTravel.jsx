@@ -25,16 +25,14 @@ const ContainerCardBody = styled.div`
     gap: 0.2rem;
     cursor: pointer;
     z-index: 100 !important;
-    &:hover{
-        opacity: 0.5 !important;
-    }
+
     
 `;
 
 const ContainerImg = styled.img`
     width: 250px;
     height: 250px;
-    opacity: 0.6 !important;
+    opacity: 1 !important;
     border-radius: 6%;
     border: 0.1rem solid #fafafa;
     object-fit: cover !important;
@@ -45,7 +43,7 @@ const ContainerImg = styled.img`
 
     &:hover {
         box-shadow: 0 0 0.4rem #6dd5fa;
-        opacity: 1 !important;
+        opacity: 0.8 !important;
         cursor: pointer;
     }
 `;
