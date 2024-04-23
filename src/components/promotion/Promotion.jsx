@@ -45,8 +45,8 @@ const Promotion = props => {
                                     price={
                                         item.price
                                     }
-                                    colorPrice="white"
-                                    backgroundPrice="red"
+                                    colorprice="white"
+                                    backgroundprice="red"
                                 />
                             );
                         }
