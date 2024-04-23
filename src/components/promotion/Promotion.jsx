@@ -21,7 +21,7 @@ const Promotion = props => {
     const filterDataPromotion = data.filter(item => parseInt(item.price) < 500)
     const randomDataPRomotion =
         filterDataPromotion.sort(() => Math.random() - 0.5)
-            .slice(0, 3);
+            .slice(0, 4);
     return (
         <>
             <ContainerPromotion className="promotion">
