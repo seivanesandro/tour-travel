@@ -59,6 +59,8 @@ const ContainerPrice = styled.button`
     background: transparent;
     border: none;
     font-size: 1.3rem;
+    color: ${({colorPrice}) => colorPrice};
+    background: ${({backgroundPrice}) => backgroundPrice};
     text-transform: uppercase;
     text-shadow: 0 0 0.1rem black;
     cursor: none;
@@ -89,7 +91,9 @@ const CardTravel = ({
     name,
     day,
     url,
-    price
+    price,
+    colorPrice,
+    backgroundPrice
 }) => {
     return (
         <>
@@ -100,6 +104,10 @@ const CardTravel = ({
                     </ContainerCardTitle>
                     <ContainerPrice
                         className="price"
+                        colorPrice={colorPrice}
+                        backgroundPrice={
+                            backgroundPrice
+                        }
                         disable
                     >
                         Days: {day} price: $
@@ -125,13 +133,17 @@ CardTravel.propTypes = {
     name: PropTypes.string.isRequired,
     day: PropTypes.number.isRequired,
     url: PropTypes.string.isRequired,
-    price: PropTypes.string.isRequired
+    price: PropTypes.string.isRequired,
+    colorPrice: PropTypes.string.isRequired,
+    backgroundPrice: PropTypes.string.isRequired
 };
 CardTravel.defaultProps = {
     name: 'countrie name',
     day: 0,
     url: 'photo link',
-    price: 'any $'
+    price: 'any $',
+    colorPrice: '#FAFAFA',
+    backgroundPrice: 'transparent'
 };
 
 export default CardTravel;

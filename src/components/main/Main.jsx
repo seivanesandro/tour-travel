@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const ContainerMain = styled.div``;
 
-const TitleMain = styled.div`
+const TitleMain = styled.h2`
     margin: 10rem auto 30px auto !important;
     text-align: center;
     &.main-title {
@@ -18,7 +18,6 @@ const TitleMain = styled.div`
 `;
 
 const Main = props => {
-    //TODO: const randomData = data.sort(()=> Math.random() - 0.5).slice(0,3);
     const randomData = data.sort(()=> Math.random() - 0.5).slice(0.3);
     return (
         <>
