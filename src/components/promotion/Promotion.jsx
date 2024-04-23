@@ -6,10 +6,10 @@ import styled from 'styled-components';
 
 const ContainerPromotion = styled.div``;
 
-const TitleMain = styled.h2`
+const TitlePromotion = styled.h2`
     margin: 10rem auto 30px auto !important;
     text-align: center;
-    &.main-title {
+    &.promotion-title {
         text-transform: uppercase;
         color: lightblue;
         font-size: 3rem;
@@ -25,9 +25,9 @@ const Promotion = props => {
     return (
         <>
             <ContainerPromotion className="promotion">
-                <TitleMain className="promotion-title">
+                <TitlePromotion className="promotion-title">
                     The Best Promotion
-                </TitleMain>
+                </TitlePromotion>
                 <div className="row">
                     {randomDataPRomotion.map(
                         item => {
