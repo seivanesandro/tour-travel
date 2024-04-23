@@ -59,8 +59,9 @@ const ContainerPrice = styled.button`
     background: transparent;
     border: none;
     font-size: 1.3rem;
-    color: ${({colorPrice}) => colorPrice};
-    background: ${({backgroundPrice}) => backgroundPrice};
+    color: ${({ colorPrice }) => colorPrice};
+    background: ${({ backgroundPrice }) =>
+        backgroundPrice};
     text-transform: uppercase;
     text-shadow: 0 0 0.1rem black;
     cursor: none;

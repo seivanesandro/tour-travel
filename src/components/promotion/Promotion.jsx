@@ -18,9 +18,12 @@ const TitlePromotion = styled.h2`
 `;
 
 const Promotion = props => {
-    const filterDataPromotion = data.filter(item => parseInt(item.price) < 500)
+    const filterDataPromotion = data.filter(
+        item => parseInt(item.price) < 500
+    );
     const randomDataPRomotion =
-        filterDataPromotion.sort(() => Math.random() - 0.5)
+        filterDataPromotion
+            .sort(() => Math.random() - 0.5)
             .slice(0, 4);
     return (
         <>
@@ -42,8 +45,8 @@ const Promotion = props => {
                                     price={
                                         item.price
                                     }
-                                    colorPrice='white'
-                                    backgroundPrice='red'
+                                    colorPrice="white"
+                                    backgroundPrice="red"
                                 />
                             );
                         }

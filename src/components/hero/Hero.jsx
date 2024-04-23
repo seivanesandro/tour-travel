@@ -31,7 +31,6 @@ const ContainerHero = styled.div`
     background-position: center !important;
     background-size: cover !important;
     width: 105%;
-    
 `;
 const HeroBanner = styled('div')`
     text-align: center;
