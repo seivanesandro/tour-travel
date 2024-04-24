@@ -4,15 +4,16 @@ import CardTravel from '../card/CardTravel';
 //import PropTypes from 'prop-types'
 import styled from 'styled-components';
 
-const ContainerPromotion = styled.div``;
+const ContainerPromotion = styled.div`
+    margin: auto auto 10rem auto;
+`;
 
 const TitlePromotion = styled.h2`
-    margin: 10rem auto 30px auto !important;
+    margin: 8rem auto 6rem auto !important;
     text-align: center;
     &.promotion-title {
         text-transform: uppercase;
         color: lightblue;
-        font-size: 3rem;
         letter-spacing: 0.4rem;
     }
 `;
@@ -45,8 +46,8 @@ const Promotion = props => {
                                     price={
                                         item.price
                                     }
-                                    colorPrice="white"
-                                    backgroundPrice="red"
+                                    colorprice="white"
+                                    backgroundprice="red"
                                 />
                             );
                         }

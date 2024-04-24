@@ -19,8 +19,8 @@ const NavbarCanvas = () => {
                 <Navbar
                     key={expand}
                     expand={expand}
+                    sticky="top"
                     className="bg-primary mb-auto color-light shadow"
-                    fixed="top"
                 >
                     <Container fluid>
                         <Navbar.Brand to="/home">

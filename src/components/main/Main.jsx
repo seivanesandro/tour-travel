@@ -12,7 +12,6 @@ const TitleMain = styled.h2`
     &.main-title {
         text-transform: uppercase;
         color: lightblue;
-        font-size: 3rem;
         letter-spacing: 0.4rem;
     }
 `;

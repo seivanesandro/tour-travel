@@ -113,7 +113,7 @@ const Hero = props => {
                             mesmo tempo”
                         </HeroTextStyled>
                         <HeroButtonStyle className="hero-btn btn btn-light font-weight-bold shadow px-5 rounded-pill shadow">
-                            Search
+                            <span>search</span>
                         </HeroButtonStyle>
                     </HeroBanner>
                 </ContainerHero>

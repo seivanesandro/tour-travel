@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont,
@@ -6,6 +10,11 @@ body {
         'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
 }
 
 code {
@@ -23,4 +32,8 @@ code {
     justify-content: flex-start;
     margin: 5rem 0 10rem 0;
     padding: 5rem 0 10rem 0;
+}
+
+.row {
+    --bs-gutter-x: -0.5rem !important;
 }
