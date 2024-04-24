@@ -22,13 +22,18 @@ const ContainerCardBody = styled.div`
     position: absolute;
     gap: 0.2rem;
     cursor: pointer;
+    opacity: 0.8 !important;
     z-index: 100 !important;
+
+    &:hover {
+        opacity: 1.1 !important;
+    }
 `;
 
 const ContainerImg = styled.img`
     width: 250px;
     height: 250px;
-    opacity: 1 !important;
+    opacity: 0.8 !important;
     border-radius: 6%;
     border: 0.1rem solid #fafafa;
     object-fit: cover !important;
@@ -39,7 +44,7 @@ const ContainerImg = styled.img`
 
     &:hover {
         box-shadow: 0 0 0.4rem #6dd5fa;
-        opacity: 0.8 !important;
+        opacity: 1.1 !important;
         cursor: pointer;
     }
 `;
@@ -77,7 +82,7 @@ const ContainerBtn = styled.button`
     border-radius: 6rem;
     margin: 2rem 0 0 0;
     text-shadow: 0 0 0.1rem black;
-    opacity: 1;
+    opacity: 1.1;
     z-index: 101 !important;
     &:hover {
         text-shadow: none;
@@ -85,6 +90,7 @@ const ContainerBtn = styled.button`
         border: 1px solid transparent;
         background: #fafafa;
         color: rgb(61, 61, 61);
+        transform: scale(1.1);
     }
 `;
 
