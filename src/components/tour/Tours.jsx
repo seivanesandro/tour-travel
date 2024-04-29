@@ -94,7 +94,6 @@ const ContainerTourText = styled.p`
         font-size: 0.9rem;
     }
 `;
-
 const ContainerRow = styled.div`
     display: flex;
     flex-direction: row;
@@ -122,7 +121,6 @@ const ContainerRow = styled.div`
         flex-direction: column;
     }
 `;
-
 const ContainerDescription = styled.div`
     display: flex;
     flex-direction: column;

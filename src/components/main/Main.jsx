@@ -19,7 +19,7 @@ const TitleMain = styled.h2`
 const Main = props => {
     const randomData = data
         .sort(() => Math.random() - 0.5)
-        .slice(0.3);
+        .slice(0,18);
     return (
         <>
             <ContainerMain className="main">
