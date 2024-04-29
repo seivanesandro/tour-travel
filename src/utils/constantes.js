@@ -10,9 +10,8 @@ const Show = keyframes`
     100%{
         opacity:1;
     }
+    //animation: ${Show} 2s linear;
 `;
-
-animation: ${Show} 2.5s linear;
 
 */
 
