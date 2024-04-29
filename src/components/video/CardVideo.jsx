@@ -46,7 +46,6 @@ const Video = styled(ReactPlayer)`
     }
 `;
 
-
 const CardVideo = props => {
     return (
         <>

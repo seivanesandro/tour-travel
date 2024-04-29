@@ -100,7 +100,8 @@ const CardTravel = ({
     url,
     price,
     colorprice,
-    backgroundprice
+    backgroundprice,
+    btntitle
 }) => {
     return (
         <>
@@ -122,7 +123,7 @@ const CardTravel = ({
                     </ContainerPrice>
 
                     <ContainerBtn className="hero-btn btn-2">
-                        <span>buy</span>
+                        <span>{btntitle}</span>
                     </ContainerBtn>
                 </ContainerCardBody>
                 <ContainerImg
@@ -142,7 +143,8 @@ CardTravel.propTypes = {
     url: PropTypes.string.isRequired,
     price: PropTypes.string.isRequired,
     colorprice: PropTypes.string.isRequired,
-    backgroundprice: PropTypes.string.isRequired
+    backgroundprice: PropTypes.string.isRequired,
+    btntitle: PropTypes.string.isRequired
 };
 CardTravel.defaultProps = {
     name: 'countrie name',
@@ -150,7 +152,8 @@ CardTravel.defaultProps = {
     url: 'photo link',
     price: 'any $',
     colorprice: '#FAFAFA',
-    backgroundprice: 'transparent'
+    backgroundprice: 'transparent',
+    btntitle: 'buy'
 };
 
 export default CardTravel;

@@ -1,14 +1,18 @@
 import React from 'react';
-import data from '../../utils/data';
-import CardTravel from '../card/CardTravel';
+import data from '../destinationdata';
+import CardTravel from '../components/card/CardTravel';
 //import PropTypes from 'prop-types'
 import styled from 'styled-components';
 
-const ContainerMain = styled.div``;
+const ContainerDestination = styled.div`
+    background: #fafafa;
+    padding: 1rem 0 7rem 0 !important;
+`;
 
-const TitleMain = styled.h2`
-    margin: 10rem auto 30px auto !important;
+const TitleDestination = styled.h2`
+    margin: 5rem auto 5rem auto !important;
     text-align: center;
+
     &.main-title {
         text-transform: uppercase;
         color: lightblue;
@@ -16,16 +20,16 @@ const TitleMain = styled.h2`
     }
 `;
 
-const Main = props => {
+const Destination = props => {
     const randomData = data
         .sort(() => Math.random() - 0.5)
         .slice(0, 18);
     return (
         <>
-            <ContainerMain className="main">
-                <TitleMain className="main-title">
-                    The Best Packages
-                </TitleMain>
+            <ContainerDestination className="main">
+                <TitleDestination className="main-title">
+                    Destinations
+                </TitleDestination>
                 <div className="row">
                     {/*TODO: Substituir por um card component */}
                     {randomData.map(item => {
@@ -36,16 +40,16 @@ const Main = props => {
                                 url={item.url}
                                 day={item.day}
                                 price={item.price}
-                                btntitle="visit"
+                                btntitle="add travel"
                             />
                         );
                     })}
                 </div>
-            </ContainerMain>
+            </ContainerDestination>
         </>
     );
 };
 
-Main.propTypes = {};
+Destination.propTypes = {};
 
-export default Main;
+export default Destination;

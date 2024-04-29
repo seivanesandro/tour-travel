@@ -4,6 +4,7 @@ import Main from '../components/main/Main';
 import styled from 'styled-components';
 import Promotion from '../components/promotion/Promotion';
 import Tours from '../components/tour/Tours';
+import Destination from './Destination';
 //import PropTypes from 'prop-types'
 
 const ContainerHome = styled.div``;
@@ -16,6 +17,7 @@ const Home = props => {
                 <Main />
                 <Tours />
                 <Promotion />
+                <Destination />
             </ContainerHome>
         </>
     );
