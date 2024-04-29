@@ -4,6 +4,7 @@ import styled, {
 } from 'styled-components';
 import bgimage from '../../imgs/bgvacationwithfilter.jpg';
 import { devices } from '../../utils/constantes';
+import { NavLink } from 'react-router-dom';
 //import PropTypes from 'prop-types'
 
 const Show = keyframes`
@@ -85,16 +86,9 @@ const HeroTextStyled = styled.p`
     }
 `;
 const HeroButtonStyle = styled.button`
-    font-weight: 600;
-    font-size: 1.4rem;
-    text-decoration: none;
     transition: 0.2s ease-in !important;
-    &:hover {
-        background: #007bff;
-        color: #fff;
-        box-shadow: 0 0 0.5rem #007bff;
-        transition: 0.2s ease-in !important;
-    }
+    text-align: center;
+
 `;
 
 const Hero = props => {
@@ -112,9 +106,19 @@ const Hero = props => {
                             de se encontrar ao
                             mesmo tempo”
                         </HeroTextStyled>
-                        <HeroButtonStyle className="hero-btn btn btn-light font-weight-bold shadow px-5 rounded-pill shadow">
-                            <span>search</span>
+
+                        {/*FIXME: fix button to navigate */}
+                        <NavLink
+                                to="/travel"
+                                className="navLinkregular"
+                                active={true}
+                            >
+                        <HeroButtonStyle className="hero-btn btn btn-light text-center font-weight-bold dark px-5 rounded-pill shadow">
+                                search
                         </HeroButtonStyle>
+                        </NavLink>
+
+
                     </HeroBanner>
                 </ContainerHero>
             </header>

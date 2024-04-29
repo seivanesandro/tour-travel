@@ -10,8 +10,10 @@ import novoblue2 from '../../imgs/logoblue2.png';
 
 import { IoAirplane } from 'react-icons/io5';
 import { FaDollarSign } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
 const NavbarCanvas = () => {
+    const isActive = true;
     return (
         <>
             {' '}
@@ -23,15 +25,17 @@ const NavbarCanvas = () => {
                     className="bg-primary mb-auto color-light shadow"
                 >
                     <Container fluid>
-                        <Navbar.Brand to="/home">
-                            <img
-                                src={novoblue}
-                                alt="brand-logo"
-                                title="go to home page"
-                                style={{
-                                    cursor: 'pointer'
-                                }}
-                            />
+                        <Navbar.Brand>
+                            <NavLink to="/">
+                                <img
+                                    src={novoblue}
+                                    alt="brand-logo"
+                                    title="go to home page"
+                                    style={{
+                                        cursor: 'pointer'
+                                    }}
+                                />
+                            </NavLink>
                         </Navbar.Brand>
                         <Navbar.Toggle
                             aria-controls={`offcanvasNavbar-expand-${expand}`}
@@ -53,33 +57,48 @@ const NavbarCanvas = () => {
                                 <Offcanvas.Title
                                     id={`offcanvasNavbarLabel-expand-${expand}`}
                                 >
-                                    <img
-                                        src={
-                                            novoblue2
-                                        }
-                                        alt="brand-logo"
-                                        title="go home"
-                                    />
+                                    <NavLink to="/">
+                                        <img
+                                            src={
+                                                novoblue2
+                                            }
+                                            alt="brand-logo"
+                                            title="go to home page"
+                                            style={{
+                                                cursor: 'pointer'
+                                            }}
+                                        />
+                                    </NavLink>
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Link
-                                        to="#action1"
+                                    <NavLink
+                                        to="/travel"
                                         className="d-flex flex-column align-items-sm-center px-3"
                                         title="Travel"
+                                        active={
+                                            isActive
+                                                ? isActive
+                                                : ''
+                                        }
                                     >
                                         <IoAirplane size="20" />
                                         Travel
-                                    </Nav.Link>
-                                    <Nav.Link
-                                        to="#action2"
+                                    </NavLink>
+                                    <NavLink
+                                        to="/price"
                                         className="d-flex flex-column align-items-sm-center px-3"
                                         title="Prices"
+                                        active={
+                                            isActive
+                                                ? isActive
+                                                : ''
+                                        }
                                     >
                                         <FaDollarSign size="20" />
-                                        Prices
-                                    </Nav.Link>
+                                        Price
+                                    </NavLink>
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>

@@ -121,8 +121,11 @@ const CardTravel = ({
                         Days: {day} price: $
                         {price}
                     </ContainerPrice>
-
-                    <ContainerBtn className="hero-btn btn-2">
+                    {/* FIXME: fix to navLink root to page travel */}
+                    <ContainerBtn
+                        className="hero-btn btn-2"
+                        to="/travel"
+                    >
                         <span>{btntitle}</span>
                     </ContainerBtn>
                 </ContainerCardBody>

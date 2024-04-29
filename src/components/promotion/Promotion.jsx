@@ -2,10 +2,24 @@ import React from 'react';
 import data from '../../utils/data';
 import CardTravel from '../card/CardTravel';
 //import PropTypes from 'prop-types'
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const Show = keyframes`
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:0.5;
+    }
+
+    100%{
+        opacity:1;
+    }
+`;
 
 const ContainerPromotion = styled.div`
     margin: auto auto 10rem auto;
+    animation: ${Show} 2s linear;
 `;
 
 const TitlePromotion = styled.h2`
@@ -32,7 +46,7 @@ const Promotion = props => {
                 <TitlePromotion className="promotion-title">
                     The Best Promotion
                 </TitlePromotion>
-                <div className="row">
+                <div className="row w-75">
                     {randomDataPRomotion.map(
                         item => {
                             return (

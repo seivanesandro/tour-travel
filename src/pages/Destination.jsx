@@ -2,11 +2,24 @@ import React from 'react';
 import data from '../destinationdata';
 import CardTravel from '../components/card/CardTravel';
 //import PropTypes from 'prop-types'
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const Show = keyframes`
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:0.5;
+    }
+
+    100%{
+        opacity:1;
+    }
+`;
 
 const ContainerDestination = styled.div`
-    background: #fafafa;
     padding: 1rem 0 7rem 0 !important;
+    animation: ${Show} 2s linear;
 `;
 
 const TitleDestination = styled.h2`
