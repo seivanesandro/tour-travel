@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../../utils/data';
+import data from '../../destinationdata';
 import CardTravel from '../card/CardTravel';
 //import PropTypes from 'prop-types'
 import styled, {
@@ -34,8 +34,9 @@ const TitlePromotion = styled.h2`
     }
 `;
 
-const Promotion = props => {
-    const filterDataPromotion = data.filter(
+const Promotion = () => {
+
+   const filterDataPromotion = data.filter(
         item => parseInt(item.price) < 500
     );
     const randomDataPRomotion =
@@ -64,7 +65,7 @@ const Promotion = props => {
                                     }
                                     colorprice="white"
                                     backgroundprice="red"
-                                    btnLink="travel"
+                                    btntitle="Go"
                                 />
                             );
                         }

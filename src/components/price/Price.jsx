@@ -35,7 +35,7 @@ const ContainerData = styled.div`
     border-radius: 1rem;
 
     padding: 2rem;
-    background: #8c8c8c;
+    background: #4d4d4d;
 
     display: flex;
     flex-direction: row;

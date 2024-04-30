@@ -41,7 +41,7 @@ const Destination = ({
     places,
     setPlaces
 }) => {
-    function add(cost, name) {
+    function add(cost,  name) {
         setPrice((price + cost));
         setPlaces([...places , name]);
          console.log(places + price);
@@ -67,6 +67,8 @@ const Destination = ({
                                 day={item.day}
                                 price={item.price}
                                 btntitle="add"
+                                colorprice="white"
+                                backgroundprice={item.price === 300 ? 'red' : 'transparent'}
                                 onclick={() =>
                                     add(
                                         item.price,
