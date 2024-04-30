@@ -54,7 +54,7 @@ const ContainerImg = styled.img`
 const ContainerCardTitle = styled.div`
     text-transform: uppercase;
     color: #6dd5fa;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
     text-shadow: 0 0 0.1rem black;
     letter-spacing: 0.3rem;
@@ -102,7 +102,9 @@ const CardTravel = ({
     price,
     colorprice,
     backgroundprice,
-    btntitle
+    btntitle,
+    btnLink,
+    onclick
 }) => {
     return (
         <>
@@ -122,10 +124,10 @@ const CardTravel = ({
                         Days: {day} price: $
                         {price}
                     </ContainerPrice>
-                    {/* FIXME: fix to navLink root to page travel */}
                     <ContainerBtn
                         className="hero-btn btn-2"
-                        to="/travel"
+                        to={'/' + btnLink}
+                        onClick={onclick}
                     >
                         <span>{btntitle}</span>
                     </ContainerBtn>
@@ -148,7 +150,9 @@ CardTravel.propTypes = {
     price: PropTypes.string.isRequired,
     colorprice: PropTypes.string.isRequired,
     backgroundprice: PropTypes.string.isRequired,
-    btntitle: PropTypes.string.isRequired
+    btntitle: PropTypes.string.isRequired,
+    btnLink: PropTypes.string.isRequired,
+    onclick: PropTypes.func
 };
 CardTravel.defaultProps = {
     name: 'countrie name',
@@ -157,7 +161,9 @@ CardTravel.defaultProps = {
     price: 'any $',
     colorprice: '#FAFAFA',
     backgroundprice: 'transparent',
-    btntitle: 'buy'
+    btntitle: 'buy',
+    btnLink: 'travel',
+    onclick: () => {}
 };
 
 export default CardTravel;

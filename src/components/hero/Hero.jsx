@@ -88,7 +88,6 @@ const HeroTextStyled = styled.p`
 const HeroButtonStyle = styled(NavLink)`
     transition: 0.2s ease-in !important;
     text-align: center;
-
 `;
 
 const Hero = props => {
@@ -113,7 +112,7 @@ const Hero = props => {
                             className="hero-btn btn btn-light text-center font-weight-bold dark px-5 rounded-pill shadow"
                             active={true}
                         >
-                                search
+                            search
                         </HeroButtonStyle>
                     </HeroBanner>
                 </ContainerHero>

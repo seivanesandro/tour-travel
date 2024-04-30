@@ -5,7 +5,12 @@ import Destination from '../components/destination/Destination';
 import Price from '../components/price/Price';
 //import PropTypes from 'prop-types'
 
-const Pages = props => {
+const Pages = ({
+    price,
+    setPrice,
+    places,
+    setPlaces
+}) => {
     return (
         <>
             <Routes>
@@ -17,12 +22,24 @@ const Pages = props => {
                 <Route
                     path="/travel"
                     and
-                    element={<Destination />}
+                    element={
+                        <Destination
+                            price={price}
+                            setPrice={setPrice}
+                            places={places}
+                            setPlaces={setPlaces}
+                        />
+                    }
                 />
                 <Route
                     path="/price"
                     and
-                    element={<Price />}
+                    element={
+                        <Price
+                            price={price}
+                            places={places}
+                        />
+                    }
                 />
             </Routes>
         </>

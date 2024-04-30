@@ -2,7 +2,9 @@ import React from 'react';
 import data from '../../utils/data';
 import CardTravel from '../card/CardTravel';
 //import PropTypes from 'prop-types'
-import styled, { keyframes } from 'styled-components';
+import styled, {
+    keyframes
+} from 'styled-components';
 
 const Show = keyframes`
     0%{
@@ -52,6 +54,7 @@ const Main = props => {
                                 day={item.day}
                                 price={item.price}
                                 btntitle="visit"
+                                btnLink="travel"
                             />
                         );
                     })}

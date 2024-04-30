@@ -2,7 +2,9 @@ import React from 'react';
 import data from '../../destinationdata';
 import CardTravel from '../card/CardTravel';
 //import PropTypes from 'prop-types'
-import styled, { keyframes } from 'styled-components';
+import styled, {
+    keyframes
+} from 'styled-components';
 
 const Show = keyframes`
     0%{
@@ -33,7 +35,19 @@ const TitleDestination = styled.h2`
     }
 `;
 
-const Destination = props => {
+const Destination = ({
+    price,
+    setPrice,
+    places,
+    setPlaces
+}) => {
+    function add(cost, name) {
+        setPrice((price + cost));
+        setPlaces([...places , name]);
+         console.log(places + price);
+    }
+   
+
     const randomData = data
         .sort(() => Math.random() - 0.5)
         .slice(0, 18);
@@ -44,7 +58,6 @@ const Destination = props => {
                     Destinations
                 </TitleDestination>
                 <div className="row">
-                    {/*TODO: Substituir por um card component */}
                     {randomData.map(item => {
                         return (
                             <CardTravel
@@ -54,6 +67,12 @@ const Destination = props => {
                                 day={item.day}
                                 price={item.price}
                                 btntitle="add"
+                                onclick={() =>
+                                    add(
+                                        item.price,
+                                        item.name
+                                    )
+                                }
                             />
                         );
                     })}

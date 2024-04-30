@@ -194,8 +194,10 @@ const Tours = props => {
                             positive and enriching
                             experience.
                         </ContainerTourText>
-                        <ContainerBtn className="hero-btn btn-2"
-                        to='/travel'>
+                        <ContainerBtn
+                            className="hero-btn btn-2"
+                            to="/travel"
+                        >
                             <span>visit</span>
                         </ContainerBtn>
                     </ContainerDescription>

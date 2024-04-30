@@ -41,22 +41,22 @@ code {
 a {
     text-transform: capitalize;
     letter-spacing: 2px;
-    font-size: 0.9rem ;
-    color: #fafafa ;
+    font-size: 0.9rem;
+    color: #fafafa;
     text-decoration: none;
-    margin: 0.9rem 0.3rem ;
+    margin: 0.9rem 0.3rem;
 }
 
 a:hover {
     text-transform: capitalize;
-    color: #fafafa ;
+    color: #fafafa;
     text-decoration: none;
 }
 
 a:active {
     text-transform: capitalize;
     letter-spacing: 2px;
-    font-size: 0.9rem ;
+    font-size: 0.9rem;
     color: #fafafa;
     text-decoration: none;
 }
@@ -64,16 +64,14 @@ a:active {
 a:link {
     text-transform: capitalize;
     text-decoration: none;
-    
 }
 
 a:visited {
     text-transform: capitalize;
     text-decoration: none;
-
 }
 
-.navLinkregular{
+.navLinkregular {
     text-transform: uppercase !important;
     color: #333 !important;
     text-decoration: none !important;
@@ -93,17 +91,25 @@ a:visited {
 .navLinkregular:link {
     text-transform: uppercase !important;
     text-decoration: none !important;
-
 }
 
 .navLinkregular:visited {
     text-transform: uppercase !important;
     text-decoration: none !important;
-
 }
 
 .w-75 {
     width: 75% !important;
     /* align-items: center; */
     margin: 1rem auto !important;
+}
+
+.hthree{
+    text-decoration: underline;
+    color: #FAFAFA;
+    font-weight: 700;
+        text-shadow: 0 0 0.1rem black;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+
 }
