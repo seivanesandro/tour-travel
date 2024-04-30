@@ -37,7 +37,9 @@ const Pages = ({
                     element={
                         <Price
                             price={price}
+                            setPrice={setPrice}
                             places={places}
+                            setPlaces={setPlaces}
                         />
                     }
                 />
