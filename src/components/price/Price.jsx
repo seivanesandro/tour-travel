@@ -161,8 +161,8 @@ const Price = ({
         alert(
             'Your order has been successfully processed. We will be in touch shortly to confirm your order details and arrange delivery'
         );
-        setPrice(()=> 0);
-        setPlaces(()=> []);
+        setPrice(0);
+        setPlaces([]);
     };
 
     return (
