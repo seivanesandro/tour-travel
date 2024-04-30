@@ -17,7 +17,6 @@ const Show = keyframes`
         opacity:1;
     }
 `;
-
 const PricingOne = styled.div`
     display: flex;
     flex-direction: column;
@@ -151,13 +150,21 @@ const TotalPrices = styled.h1`
     text-transform: uppercase;
 `;
 
-const Price = ({price, places}) => {
+const Price = ({
+    price,
+    setPrice,
+    places,
+    setPlaces
+}) => {
 
     const handleonClick = () => {
         alert(
             'Your order has been successfully processed. We will be in touch shortly to confirm your order details and arrange delivery'
         );
-    }
+        setPrice(()=> 0);
+        setPlaces(()=> []);
+    };
+
     return (
         <>
             <PricingOne className="pricing-1">
@@ -171,15 +178,13 @@ const Price = ({price, places}) => {
                         <h3 className="hthree">
                             Places
                         </h3>
-                        {places.map(
-                            (item, price) => {
-                                return (
-                                    <PlacesNames className="places-name">
-                                        {item}
-                                    </PlacesNames>
-                                );
-                            }
-                        )}
+                        {places.map(item => {
+                            return (
+                                <PlacesNames className="places-name" key={item}>
+                                    {item}
+                                </PlacesNames>
+                            );
+                        })}
                     </ContainerPlaces>
                     <ContainerTotalPrice className="container-total-price">
                         <h3 className="hthree">
@@ -192,9 +197,8 @@ const Price = ({price, places}) => {
                     </ContainerTotalPrice>
                 </ContainerData>
                 <NavLink
-                    
                     onClick={handleonClick}
-                    to='/'
+                    to="/"
                     className="btn btn-light text-center font-weight-bold dark px-5 rounded-pill shadow"
                 >
                     Order

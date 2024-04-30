@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../../utils/data';
+import data from '../../destinationdata';
 import CardTravel from '../card/CardTravel';
 //import PropTypes from 'prop-types'
 import styled, {
