@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 const ColLgFour = styled.div`
     position: relative;
@@ -64,7 +65,7 @@ const ContainerCardTitle = styled.div`
 const ContainerPrice = styled.button`
     background: transparent;
     border: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: ${({ colorprice }) => colorprice};
     background: ${({ backgroundprice }) =>
         backgroundprice};
@@ -74,7 +75,7 @@ const ContainerPrice = styled.button`
     opacity: 1;
     z-index: 101 !important;
 `;
-const ContainerBtn = styled.button`
+const ContainerBtn = styled(NavLink)`
     font-weight: 600;
     background: transparent;
     color: #fff;

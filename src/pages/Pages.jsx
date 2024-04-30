@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Home from '../components/destinations/Home';
-import Destination from './Destination';
+import Home from '../components/home/Home';
+import Destination from '../components/destination/Destination';
 import Price from '../components/price/Price';
 //import PropTypes from 'prop-types'
 

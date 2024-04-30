@@ -5,6 +5,7 @@ import styled, {
 } from 'styled-components';
 import CardVideo from '../video/CardVideo';
 import { devices } from '../../utils/constantes';
+import { NavLink } from 'react-router-dom';
 
 const ShowTour = keyframes`
     0%{
@@ -130,7 +131,7 @@ const ContainerDescription = styled.div`
         animation: ${ShowTour} 2s linear;
     }
 `;
-const ContainerBtn = styled.button`
+const ContainerBtn = styled(NavLink)`
     font-weight: 600;
     font-size: 1.2rem;
     background: rgb(61, 61, 61);
@@ -193,7 +194,8 @@ const Tours = props => {
                             positive and enriching
                             experience.
                         </ContainerTourText>
-                        <ContainerBtn className="hero-btn btn-2">
+                        <ContainerBtn className="hero-btn btn-2"
+                        to='/travel'>
                             <span>visit</span>
                         </ContainerBtn>
                     </ContainerDescription>

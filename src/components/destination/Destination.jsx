@@ -1,6 +1,6 @@
 import React from 'react';
-import data from '../destinationdata';
-import CardTravel from '../components/card/CardTravel';
+import data from '../../destinationdata';
+import CardTravel from '../card/CardTravel';
 //import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components';
 
@@ -53,7 +53,7 @@ const Destination = props => {
                                 url={item.url}
                                 day={item.day}
                                 price={item.price}
-                                btntitle="add travel"
+                                btntitle="add"
                             />
                         );
                     })}

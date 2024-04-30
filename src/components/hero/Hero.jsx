@@ -85,7 +85,7 @@ const HeroTextStyled = styled.p`
         letter-spacing: 0.2rem;
     }
 `;
-const HeroButtonStyle = styled.button`
+const HeroButtonStyle = styled(NavLink)`
     transition: 0.2s ease-in !important;
     text-align: center;
 
@@ -108,17 +108,13 @@ const Hero = props => {
                         </HeroTextStyled>
 
                         {/*FIXME: fix button to navigate */}
-                        <NavLink
-                                to="/travel"
-                                className="navLinkregular"
-                                active={true}
-                            >
-                        <HeroButtonStyle className="hero-btn btn btn-light text-center font-weight-bold dark px-5 rounded-pill shadow">
+                        <HeroButtonStyle
+                            to="/travel"
+                            className="hero-btn btn btn-light text-center font-weight-bold dark px-5 rounded-pill shadow"
+                            active={true}
+                        >
                                 search
                         </HeroButtonStyle>
-                        </NavLink>
-
-
                     </HeroBanner>
                 </ContainerHero>
             </header>
