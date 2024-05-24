@@ -1,8 +1,10 @@
 import React from 'react';
 //import CardTravel from '../card/CardTravel';
 //import PropTypes from 'prop-types';
-import styled, { keyframes } from 'styled-components';
-import { NavLink } from 'react-router-dom'
+import styled, {
+    keyframes
+} from 'styled-components';
+import { NavLink } from 'react-router-dom';
 import { devices } from '../../utils/constantes';
 
 const Show = keyframes`
@@ -156,7 +158,6 @@ const Price = ({
     places,
     setPlaces
 }) => {
-
     const handleonClick = () => {
         alert(
             'Your order has been successfully processed. We will be in touch shortly to confirm your order details and arrange delivery'
@@ -180,7 +181,10 @@ const Price = ({
                         </h3>
                         {places.map(item => {
                             return (
-                                <PlacesNames className="places-name" key={item}>
+                                <PlacesNames
+                                    className="places-name"
+                                    key={item}
+                                >
                                     {item}
                                 </PlacesNames>
                             );

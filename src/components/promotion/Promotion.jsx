@@ -35,8 +35,7 @@ const TitlePromotion = styled.h2`
 `;
 
 const Promotion = () => {
-
-   const filterDataPromotion = data.filter(
+    const filterDataPromotion = data.filter(
         item => parseInt(item.price) < 500
     );
     const randomDataPRomotion =

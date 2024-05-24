@@ -41,12 +41,11 @@ const Destination = ({
     places,
     setPlaces
 }) => {
-    function add(cost,  name) {
-        setPrice((price + cost));
-        setPlaces([...places , name]);
-         console.log(places + price);
+    function add(cost, name) {
+        setPrice(price + cost);
+        setPlaces([...places, name]);
+        console.log(places + price);
     }
-   
 
     const randomData = data
         .sort(() => Math.random() - 0.5)
@@ -68,7 +67,12 @@ const Destination = ({
                                 price={item.price}
                                 btntitle="add"
                                 colorprice="white"
-                                backgroundprice={item.price === 300 ? 'red' : 'transparent'}
+                                backgroundprice={
+                                    item.price ===
+                                    300
+                                        ? 'red'
+                                        : 'transparent'
+                                }
                                 onclick={() =>
                                     add(
                                         item.price,

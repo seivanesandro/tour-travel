@@ -104,12 +104,11 @@ a:visited {
     margin: 1rem auto !important;
 }
 
-.hthree{
+.hthree {
     text-decoration: underline;
-    color: #FAFAFA;
+    color: #fafafa;
     font-weight: 700;
-        text-shadow: 0 0 0.1rem black;
-        letter-spacing: 0.3rem;
-        text-transform: uppercase;
-
+    text-shadow: 0 0 0.1rem black;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
 }
